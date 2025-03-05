@@ -1,0 +1,160 @@
+/* Section: Spacing - Padding */
+.section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+/* Section: Layout - Container */
+.container {
+    width: 90%;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section: Text Alignment */
+.text-center {
+    text-align: center;
+}
+
+/* Section: Flexbox Utilities */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/* Section: Spacing - Gap */
+
+.gap-4 {
+    gap: 0.25rem;
+}
+
+.gap-8 {
+    gap: 0.5rem;
+}
+
+.gap-12{
+    gap: 0.75rem;}
+
+.gap-16 {
+    gap: 1rem;
+}
+
+.gap-20 {
+    gap: 1.25rem;
+}
+
+.gap-24 {
+    gap: 1.5rem;
+}
+
+.gap-32 {
+    gap: 2rem;
+}
+
+.gap-48{
+    gap: 3rem;
+}
+
+.gap-80{
+    gap: 5rem;
+}
+
+/* Section: Spacing - Margin Bottom */
+.mb-8 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-16 {
+    margin-bottom: 1rem;
+}
+
+.mb-20 {
+    margin-bottom: 1.25rem;
+}
+
+.mb-24 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-32 {
+    margin-bottom: 2rem;
+}
+
+/* Section: Spacing - Margin Top */
+.mt-8 {
+    margin-top: 0.5rem;
+}
+
+.mt-16 {
+    margin-top: 1rem;
+}
+
+.mt-20 {
+    margin-top: 1.25rem;
+}
+
+.mt-24 {
+    margin-top: 1.5rem;
+}
+
+.mt-32 {        
+    margin-top: 2rem;
+}
+
+.text-color{
+    color: #1a1a1a;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.fw-medium{
+    font-weight: 500;
+}
+
+.sticky{
+    position: sticky;
+    top:0;
+}
+
+.bc-fff{
+    background-color: #fff;
+}
+
+.pb-24{
+    padding-bottom: 1.5rem;
+}
+
+.pb-32{
+    padding-bottom: 2rem;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 85%;
+    }
+
+    .section{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}

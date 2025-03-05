@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html
+    lang="en"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Flagify</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="utility.css">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header container">
+        <nav class="navbar">
+            <div class="logo"><img src="assets/Logo.svg"></div>
+             <div class="menu"> 
+                <a target="_blank" href="https://www.linkedin.com/in/jannik-zellinger-234a0a301/" class="link">LinkedIn</a>  
+                <a class="btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 256 256"><path d="M80,56V24a8,8,0,0,1,16,0V56a8,8,0,0,1-16,0Zm40,8a8,8,0,0,0,8-8V24a8,8,0,0,0-16,0V56A8,8,0,0,0,120,64Zm32,0a8,8,0,0,0,8-8V24a8,8,0,0,0-16,0V56A8,8,0,0,0,152,64Zm96,56v8a40,40,0,0,1-37.51,39.91,96.59,96.59,0,0,1-27,40.09H208a8,8,0,0,1,0,16H32a8,8,0,0,1,0-16H56.54A96.3,96.3,0,0,1,24,136V88a8,8,0,0,1,8-8H208A40,40,0,0,1,248,120ZM200,96H40v40a80.27,80.27,0,0,0,45.12,72h69.76A80.27,80.27,0,0,0,200,136Zm32,24a24,24,0,0,0-16-22.62V136a95.78,95.78,0,0,1-1.2,15A24,24,0,0,0,232,128Z"></path></svg>Buy me a coffee</a> 
+            </div>
+            <button onclick="toggleMenu()" class="modal-btn active"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#1a1a1a" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg></button>
+            <button onclick="toggleMenu()" class="modal-btn close"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#1a1a1a" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></button>
+        </nav>
+    </header>
+
+    <div class="section">
+        <div class="container flex-column gap-80 align-center">
+                <div class="text-center flex-column gap-24 align-center">
+                    <div class="accent"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="20" viewBox="0 0 13 20" fill="none">
+                        <g clip-path="url(#clip0_93_3009)">
+                        <path d="M6.5 10.0001C6.5 8.15903 7.95497 6.66675 9.75 6.66675C11.545 6.66675 13 8.15903 13 10.0001C13 11.8411 11.545 13.3334 9.75 13.3334C7.95497 13.3334 6.5 11.8411 6.5 10.0001Z" fill="#1ABCFE"/>
+                        <path d="M0 16.6666C0 14.8255 1.45497 13.3333 3.25 13.3333H6.5V16.6666C6.5 18.5076 5.04503 19.9999 3.25 19.9999C1.45497 19.9999 0 18.5076 0 16.6666Z" fill="#0ACF83"/>
+                        <path d="M6.5 0V6.66667H9.75C11.545 6.66667 13 5.17439 13 3.33333C13 1.49228 11.545 0 9.75 0H6.5Z" fill="#FF7262"/>
+                        <path d="M0 3.33333C0 5.17439 1.45497 6.66667 3.25 6.66667H6.5V0H3.25C1.45497 0 0 1.49228 0 3.33333Z" fill="#F24E1E"/>
+                        <path d="M0 10.0001C0 11.8411 1.45497 13.3334 3.25 13.3334H6.5V6.66675H3.25C1.45497 6.66675 0 8.15903 0 10.0001Z" fill="#A259FF"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_93_3009">
+                        <rect width="13" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>Made for Figma</div>
+                    <h1 >Free Svg Flag Icons</h1>
+                    <p>Explore over 256 Free optimized SVG country flag icons — Perfectly crafted with a cute touch.</p>
+                    <a href="#grid" class="btn-primary mt-8"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm37.66-85.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32,0l-32-32a8,8,0,0,1,11.32-11.32L120,148.69V88a8,8,0,0,1,16,0v60.69l18.34-18.35A8,8,0,0,1,165.66,130.34Z"></path></svg>Explore Icons</a>
+                </div>  
+
+                <div class="flex-column">
+                    <div class=" search-wrapper">
+                        <div class="search-container">
+                            <input type="text" id="search-input" class="search-input" placeholder="Search flags...">
+                        </div>
+
+                            <a href="mailto:your-email@example.com?subject=Missing Country Flag" class="btn contact-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,16a87.5,87.5,0,0,1,48,14.28V74L153.83,99.74,122.36,104l-.31-.22L102.38,90.92A16,16,0,0,0,79.87,95.1L58.93,126.4a16,16,0,0,0-2.7,8.81L56,171.44l-3.27,2.15A88,88,0,0,1,128,40ZM62.29,186.47l2.52-1.65A16,16,0,0,0,72,171.53l.21-36.23L93.17,104a3.62,3.62,0,0,0,.32.22l19.67,12.87a15.94,15.94,0,0,0,11.35,2.77L156,115.59a16,16,0,0,0,10-5.41l22.17-25.76A16,16,0,0,0,192,74V67.67A87.87,87.87,0,0,1,211.77,155l-16.14-14.76a16,16,0,0,0-16.93-3l-30.46,12.65a16.08,16.08,0,0,0-9.68,12.45l-2.39,16.19a16,16,0,0,0,11.77,17.81L169.4,202l2.36,2.37A87.88,87.88,0,0,1,62.29,186.47ZM185,195l-4.3-4.31a16,16,0,0,0-7.26-4.18L152,180.85l2.39-16.19L184.84,152,205,170.48A88.43,88.43,0,0,1,185,195Z"></path></svg>Country missing? 
+                            </a>
+        
+                    </div>
+
+                    <div id="grid" class="grid">
+                        
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+
+    <footer class=" container flex-column align-center justify-center pb-32 gap-32">
+        <div class="divider"></div>
+        <p>Made by <a class="underline">Jannik Zellinger</a></p>
+    </footer>
+   
+    <script src="script.js"></script>   
+</body>
