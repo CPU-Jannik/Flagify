@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utility.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header container sticky">
+        <nav class="navbar">
+            <a href="index.html">
+                <div class="logo"><img src="assets/Logo.svg"></div>
+            </a>
+             <div class="menu"> 
+                <a target="_blank" href="https://www.linkedin.com/in/jannik-zellinger-234a0a301/" class="link">LinkedIn</a>
+                <a target="_blank" href="mailto:jannik.zlr@gmail.com?subject=Bug report" class="link">Report a bug</a>   
+                <a class="btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 256 256"><path d="M80,56V24a8,8,0,0,1,16,0V56a8,8,0,0,1-16,0Zm40,8a8,8,0,0,0,8-8V24a8,8,0,0,0-16,0V56A8,8,0,0,0,120,64Zm32,0a8,8,0,0,0,8-8V24a8,8,0,0,0-16,0V56A8,8,0,0,0,152,64Zm96,56v8a40,40,0,0,1-37.51,39.91,96.59,96.59,0,0,1-27,40.09H208a8,8,0,0,1,0,16H32a8,8,0,0,1,0-16H56.54A96.3,96.3,0,0,1,24,136V88a8,8,0,0,1,8-8H208A40,40,0,0,1,248,120ZM200,96H40v40a80.27,80.27,0,0,0,45.12,72h69.76A80.27,80.27,0,0,0,200,136Zm32,24a24,24,0,0,0-16-22.62V136a95.78,95.78,0,0,1-1.2,15A24,24,0,0,0,232,128Z"></path></svg>Buy me a coffee</a> 
+            </div>
+            <button onclick="toggleMenu()" class="modal-btn active"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#1a1a1a" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg></button>
+            <button onclick="toggleMenu()" class="modal-btn close"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#1a1a1a" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg></button>
+        </nav>
+    </header>
+
+<div class="section">
+    <div class="container">
+        <div class="overflow-hidden">
+                <h1 class="mb-32">Imprint</h1>
+            <div class="mb-32">
+                <h3 class="mb-16">Informationen nach § 5 TMG</h3>
+                <p class="fs-18">Studio Jannik Zellinger<br>Woyrschweg 45<br>22761 Hamburg, DE</p>
+            </div>
+
+            <div class="mb-32">
+                <h3 class="mb-16">Contact</h3>
+                <p class="fs-18">015129607608<br>jannik.zlr@gmail.com</p>
+            </div>
+
+            <div class="mb-32">
+                <h3 class="mb-16">Vat Id</h3>
+                <p class="fs-18">According to small business owner: 52370914834</p>
+            </div>
+
+            <div class="mb-32">
+                <h3 class="mb-16">EU dispute settlement</h3>
+                <p class="fs-18 long-text">The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr/. Our email address can be found in the imprint above.</p>
+            </div>
+
+            <div class="mb-32">
+                <h3 class="mb-16">Liability for links</h3>
+                <p class="fs-18 long-text">This website contains links to external third-party websites. I have no influence on their content. Therefore, I cannot accept any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. I will remove such content immediately if I become aware of any legal violations.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer class=" container flex-column align-center justify-center pb-32 gap-32">
+        <div class="divider"></div>
+            <div class="flex space-between full-width">
+                <p>Made by <a href="https://www.linkedin.com/in/jannik-zellinger-234a0a301/" class="underline">Jannik Zellinger</a></p>
+                <a href="imprint.html" class="link">Imprint</a>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

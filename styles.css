@@ -10,6 +10,19 @@ h1{
     font-weight:500;
 }
 
+h2{
+    font-size: 3rem;
+    line-height:1.2;
+    font-weight:500;
+}
+
+h3{
+    font-size: 2rem;
+    line-height:1.2;
+    font-weight:500;
+}
+
+
 p{
     color:#767676;
 }
@@ -34,12 +47,16 @@ body {
     color: #1a1a1a;
     background-color: #ffffff;
     margin:0;
+    overflow-x:hidden;
 }
 
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
-    overflow-x:hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'kern' 1;
+    text-rendering: optimizeLegibility;
 }
 
 input{
