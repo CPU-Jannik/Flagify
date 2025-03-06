@@ -98,6 +98,7 @@ z-index:3;
 
 .btn-primary {
     display: inline-flex;
+    font-weight:500;
     align-items:center;
     justify-content: center;
     gap:0.5rem;
@@ -298,6 +299,10 @@ z-index:3;
 
     h1{
         font-size:3rem;
+    }
+
+    h3{
+        font-size:1.5rem;
     }
 
     .menu{
